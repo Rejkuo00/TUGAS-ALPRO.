@@ -1,0 +1,20 @@
+# Input total belanja dan jumlah diskon dari pengguna
+total_belanja = float(input("Masukkan total belanja (Rp): "))
+jumlah_diskon = int(input("Masukkan jumlah diskon (1 atau 2): "))
+
+# Inisialisasi variabel diskon
+diskon = 0
+
+# Check apakah total belanja lebih besar atau sama dengan Rp 100.000
+if total_belanja >= 100000:
+    # Hitung diskon sesuai dengan jumlah yang dimasukkan pengguna
+    if jumlah_diskon == 1:
+        diskon = 0.1  # Diskon 10%
+    elif jumlah_diskon == 2:
+        diskon = 0.15  # Diskon 15%
+
+# Hitung total bayar setelah diberikan diskon
+total_bayar = total_belanja - (total_belanja * diskon)
+
+# Tampilkan total bayar setelah diskon kepada pengguna
+print(f"Total bayar setelah diskon: Rp {total_bayar:.2f}")
