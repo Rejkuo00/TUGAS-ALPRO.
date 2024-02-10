@@ -1,0 +1,13 @@
+# Input nama dan umur dari pengguna
+nama = input("Masukkan nama: ")
+umur = int(input("Masukkan umur: "))
+
+# Mengevaluasi kondisi umur dan menampilkan hasil
+if 10 <= umur <= 17:
+    print(f"{nama} termasuk pemain anak-anak/remaja")
+elif 18 <= umur <= 30:
+    print(f"{nama} termasuk pemain muda/dewasa")
+elif umur >= 30:
+    print(f"{nama} termasuk pemain tua/veteran")
+else:
+    print(f"{nama} termasuk pemain dibawah umur")
