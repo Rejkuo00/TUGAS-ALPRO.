@@ -1,0 +1,14 @@
+# Input jumlah bilangan ganjil yang diinginkan (n)
+n = int(input("Masukkan jumlah bilangan ganjil yang diinginkan: "))
+
+# Inisialisasi variabel untuk menyimpan bilangan ganjil
+bilangan_ganjil = []
+
+# Loop untuk menghasilkan n bilangan ganjil positif
+i = 1
+while len(bilangan_ganjil) < n:
+    bilangan_ganjil.append(i)
+    i += 2
+
+# Menampilkan hasil
+print(f"{n} bilangan ganjil positif pertama: {bilangan_ganjil}")
