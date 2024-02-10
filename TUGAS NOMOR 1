@@ -1,0 +1,12 @@
+# Input suhu dalam Celsius
+celsius = float(input("Masukkan suhu dalam Celsius: "))
+
+# Konversi ke Reamur
+reamur = (4/5) * celsius
+
+# Konversi ke Fahrenheit
+fahrenheit = (9/5) * celsius + 32
+
+# Menampilkan hasil konversi
+print(f"Suhu dalam Reamur: {reamur} °Re")
+print(f"Suhu dalam Fahrenheit: {fahrenheit} °F")
